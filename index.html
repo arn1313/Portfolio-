@@ -16,9 +16,6 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/Skeleton-2.0.4/css/normalize.css">
   <link rel="stylesheet" href="css/Skeleton-2.0.4/css/skeleton.css">
   <link rel="stylesheet" href="css/base.css">
@@ -27,6 +24,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+  <script id="myprojectsList-template" type="text/x-handlebars-template">
+  <div class="row">
+    <div class="twelve columns"><h2>
+      <div id="articles">
+          <li class="projects">
+            <h2>{{title}}</h2>
+            <img src="{{image}}">
+            <h2>{{category}}</h2>
+            <h3>{{completedOn}}<h3>
+            </li>
+          </script>
+        </div>
+      </div>
+    </div>
 
   <!-- Nav
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -80,6 +92,10 @@
     <div class="row">
       <div class="eleven column">
         <h2>Projects</h2>
+        <div id="articles">
+
+
+        </div>
       </div>
     </div>
   </div>
@@ -94,23 +110,9 @@
 </div>
 </div>
 
-<div class="row">
-  <div class="twelve columns"><h2>
-    <div id="articles">
-      <script id="myprojectsList-template" type="text/x-handlebars-template">
-        <li class="projects">
-          <h2>{{title}}</h2>
-          <img src="{{image}}">
-          <h2>{{category}}</h2>
-          <h3>{{completedOn}}<h3>
-          </li>
-        </script>
-      </div>
-    </div>
-  </div>
 
   <footer>
-    
+
     &copy; 2017 Aaron McPeek
 
   </footer>
@@ -118,7 +120,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="JS/app.js"></script>
   <!-- <script src="JS/proj.json"></script> -->
-  <!-- <script src="JS/projects.js"></script> -->
+  <script src="JS/projects.js"></script>
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

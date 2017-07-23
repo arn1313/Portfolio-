@@ -20,5 +20,5 @@ app.post('./articles', bodyParser, function(request, response){
 });
 
 app.listen(PORT, function(){
-  console.log(`Listen to port:" ${PORT}"`);
+  console.log(`Listen to port: ${PORT}`);
 })

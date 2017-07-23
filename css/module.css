@@ -15,14 +15,6 @@
 #1A2930 denim
 #F7CE3E marigold*/
 
-/*.myNav {
-  color: #F7CE3E;
-}*/
-
-/*#main {
-  background-color: #F7CE3E;
-}*/
-
 
 .myNav li {
   color: #F7CE3E;
@@ -32,90 +24,3 @@
   float: right;
   padding: 1em;
 }
-
-/*.heading-group-h1 {
-  color: #1A2930;
-  display: inline-block;
-  text-decoration: none;
-  border: 5px solid orange;
-  float: right;
-  padding: 1em;
-}
-
-.one {
-  background-color: #F7CE3E;
-  color: white;
-  position: relative;
-  width: 70%;
-  font-size: 20px;
-  border: 5px solid orange;
-  margin: 25px;
-  padding: 15px;
-  float: left;
-}
-
-.one h1 {*/
-  /*font-size: 50px;
-}
-
-.one li {
-  font-size: 15px;
-  float: right;
-  padding: 5px;
-}
-
-.two {
-  max-width: 100%;
-  background-image: url("imgs/jesus-kiteque-224069.jpg")
-  height: 20px;
-  position: relative;
-  font-size: 20px;
-  border: 2px solid orange;
-  float: right;
-}
-*/
-/*.two img {
-  max-width: 80%;
-}
-
-.three {
-  width: 100%;
-  position: relative;
-  display: inline-block;
-  font-size: 20px;
-  border: 2px solid orange;
-}
-
-.three img {
-  display: inline-block;
-  width: 30%;
-  margin: 5px;
-  border: 5px;
-  padding: 5px;
-}
-
-.four {
-  width: 33%;
-  position: relative;
-  font-size: 20px;
-  border: 2px solid orange;
-  float: inherit;
-}
-
-.five {
-  background-color: *#233237;
-  position: relative;
-  height: 10em;
-  width: 100%;
-  font-size: 19px;
-  border: 2px solid orange;
-  margin: 5px;
-  padding: 5px;
-  float: left;
-}
-
-.five h3 {
-  font-size: 25px;
-  text-shadow: #C5C1C0;
-  text-decoration: underline;
-}*/

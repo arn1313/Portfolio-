@@ -13,12 +13,13 @@ function Project(rawDataObj) {
 Project.prototype.toHtml = function() {
   var myprojectsList = $('#myprojectsList-template').html();
   var compiled = Handlebars.compile(myprojectsList);
+  $('#articles').append(compiled(this));
   return compiled(this)
 };
 
 
 projects.forEach(function(Project) {
-  $('#articles').append(Project.toHtml());
+  $('#Projects').append(Project.toHtml());
 });
 console.log('is this thing on');
 function hideSections(){
