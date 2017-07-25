@@ -18,8 +18,8 @@ Project.prototype.toHtml = function() {
 };
 
 
-projects.forEach(function(Project) {
-  $('#Projects').append(Project.toHtml());
+projects.forEach(function(potato) {
+  $('#projects').append(potato.toHtml());
 });
 console.log('is this thing on');
 function hideSections(){
