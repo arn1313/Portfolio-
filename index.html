@@ -25,41 +25,39 @@
   <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
-  <script id="myprojectsList-template" type="text/x-handlebars-template">
-  <div class="row">
-    <div class="twelve columns"><h2>
-      <div id="articles">
-          <li class="projects">
-            <h2>{{title}}</h2>
-            <img src="{{image}}">
-            <h2>{{category}}</h2>
-            <h3>{{completedOn}}<h3>
-            </li>
-          </script>
+  <script type="text/x-handlebars-template" id="project-template">
+    <div class="row">
+      <div class="twelve columns"><h2>
+        <li class="projects">
+          <h2>{{title}}</h2>
+          <img class="someClass" src="{{imgURL}}">
+          <h2>{{category}}</h2>
+          <h3>{{completedOn}}<h3>
+          </li>
         </div>
       </div>
-    </div>
+    </script>
 
-  <!-- Nav
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Nav
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
-</head>
-<body>
-  <div class="container" id="main" class="header" style="margin-top: 2%">
-    <header>
-      <div class="row">
-        <div class="eleven columns">
-          <nav class="main-nav">
-            <h1>Aaron McPeek</h1>
-            <ul class="myNav">
-              <li><i class="fa fa-bars" aria-hidden="true"></i></li>
-              <li><a href="https://github.com/arn1313"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.linkedin.com/feed/?trk="><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            </ul>
-          </nav>
-        </div></div>
-      </header>
+  </head>
+  <body>
+    <div class="container" id="main" class="header" style="margin-top: 2%">
+      <header>
+        <div class="row">
+          <div class="eleven columns">
+            <nav class="main-nav">
+              <h1>Aaron McPeek</h1>
+              <ul class="myNav">
+                <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+                <li><a href="https://github.com/arn1313"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/feed/?trk="><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              </ul>
+            </nav>
+          </div></div>
+        </header>
         <div class="row">
           <div class="twelve columns" style="margin-top: 2%">
             <h3>Some Quote or Something!</h3>
@@ -72,58 +70,58 @@
             <button class="projects" type="button" name="button">Projects</button>
           </div>
         </div>
-    </div>
+      </div>
 
 
-    <!-- Primary Page Layout
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- Primary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <div class="container" id="About">
-      <div class="row">
-        <div class="eleven column">
-          <h2>About</h2>
-          <div id="aboutMe">
-          <h4>Lucas ipsum dolor sit amet twi'lek mon qui-gon yavin hoth moff utapau jango palpatine hutt. Windu alderaan solo moff skywalker. Skywalker sidious moff windu skywalker yoda lobot solo. Anakin grievous hoth chewbacca darth wedge. Moff skywalker solo jawa biggs. Grievous obi-wan obi-wan hoth kenobi wookiee calrissian moff. K-3po jango vader yoda jade solo. Yoda tatooine wedge vader darth moff kenobi. Ahsoka c-3p0 droid moff wedge tatooine maul. Organa hutt greedo twi'lek kamino twi'lek organa. Vader fett bespin jade moff wedge luuke r2-d2.</h4>
+      <div class="container" id="About">
+        <div class="row">
+          <div class="eleven column">
+            <h2>About</h2>
+            <div id="aboutMe">
+              <h4>Lucas ipsum dolor sit amet twi'lek mon qui-gon yavin hoth moff utapau jango palpatine hutt. Windu alderaan solo moff skywalker. Skywalker sidious moff windu skywalker yoda lobot solo. Anakin grievous hoth chewbacca darth wedge. Moff skywalker solo jawa biggs. Grievous obi-wan obi-wan hoth kenobi wookiee calrissian moff. K-3po jango vader yoda jade solo. Yoda tatooine wedge vader darth moff kenobi. Ahsoka c-3p0 droid moff wedge tatooine maul. Organa hutt greedo twi'lek kamino twi'lek organa. Vader fett bespin jade moff wedge luuke r2-d2.</h4>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="container" id="Projects">
-    <div class="row">
-      <div class="eleven column">
-        <h2>Projects</h2>
-        <div id="articles">
+      <div class="container" id="Projects">
+        <div class="row">
+          <div class="eleven column">
+            <h2>Projects</h2>
+            <div id="articles">
 
 
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="container" id="Journal">
-    <div class="row">
-      <h2>Journal</h2>
-      <div class="eleven column">
-      <div id="journal">
-      <h4>Lucas ipsum dolor sit amet sith amidala hutt darth darth darth organa kit moff sith. Wampa calamari obi-wan moff ahsoka lars lobot kenobi yoda. Hutt darth moff sith dagobah. Moff amidala padmé mon mace baba aayla hoth. Moff moff kessel biggs bespin jade windu wedge. Baba calamari windu dagobah skywalker qui-gonn. Jawa hutt mara dantooine anakin windu kessel. Solo darth jar darth padmé moff windu. Palpatine jinn kenobi vader. Tatooine obi-wan darth dooku skywalker obi-wan solo leia qui-gonn. Calrissian boba sidious ponda dantooine qui-gon windu.</h4>
-    </div>
-  </div>
-</div>
-</div>
+      <div class="container" id="Journal">
+        <div class="row">
+          <h2>Journal</h2>
+          <div class="eleven column">
+            <div id="journal">
+              <h4>Lucas ipsum dolor sit amet sith amidala hutt darth darth darth organa kit moff sith. Wampa calamari obi-wan moff ahsoka lars lobot kenobi yoda. Hutt darth moff sith dagobah. Moff amidala padmé mon mace baba aayla hoth. Moff moff kessel biggs bespin jade windu wedge. Baba calamari windu dagobah skywalker qui-gonn. Jawa hutt mara dantooine anakin windu kessel. Solo darth jar darth padmé moff windu. Palpatine jinn kenobi vader. Tatooine obi-wan darth dooku skywalker obi-wan solo leia qui-gonn. Calrissian boba sidious ponda dantooine qui-gon windu.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-  <footer>
+      <footer>
 
-    &copy; 2017 Aaron McPeek
+        &copy; 2017 Aaron McPeek
 
-  </footer>
+      </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="JS/app.js"></script>
-  <script src="JS/rawdata.js"></script>
-  <script src="JS/proj.json"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="JS/app.js"></script>
+      <script src="JS/rawdata.js"></script>
+      <script src="JS/proj.json"></script>
 
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
-</html>
+      <!-- End Document
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </body>
+    </html>
