@@ -1,8 +1,9 @@
-'use strict'
+'use strict';
 
 var projects = [];
 
-function Project(rawDataObj) {
+function Myproject(rawDataObj) {
+  console.log(rawDataObj);
   this.title = rawDataObj.title;
   this.projUrl = rawDataObj.projUrl;
   this.image = rawDataObj.image;
@@ -10,21 +11,28 @@ function Project(rawDataObj) {
   this.completedOn = rawDataObj.completedOn;
 }
 
-Project.prototype.toHtml = function() {
-  var myprojectsList = $('#myprojectsList-template').html();
+Myproject.prototype.toHTML = function() {
+  var myprojectsList = $('#project-template').text();
   var compiled = Handlebars.compile(myprojectsList);
-  $('#articles').append(compiled(this));
+  console.log(this);
   return compiled(this)
 };
 
 
-projects.forEach(function(potato) {
-  $('#projects').append(potato.toHtml());
+$('#articles').append(compiled(this));
+rawData.forEach(function(project) {
+  projects.push(new Myproject(project));
+})
+
+Myproject.forEach(function(this) {
+  $('#projects').append(compiled(this));
 });
 console.log('is this thing on');
+
 function hideSections(){
   $('#main').siblings().hide();
 }
+
 function handleNav(){
   $('#navbut').on('click', 'button',
   function(){
@@ -35,6 +43,6 @@ function handleNav(){
 }
 
 
-
+// Myproject();
 handleNav();
 hideSections();
