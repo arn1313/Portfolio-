@@ -6,8 +6,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Aaron McPeek</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="portfolio">
+  <meta name="author" content="Aaron McPeek">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -15,27 +15,25 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+  <link href="//fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+
   <link rel="stylesheet" href="css/Skeleton-2.0.4/css/normalize.css">
   <link rel="stylesheet" href="css/Skeleton-2.0.4/css/skeleton.css">
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/module.css">
   <link rel="stylesheet" href="css/layout.css"> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  <link rel="stylesheet" href="css/module.css">
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <script type="text/x-handlebars-template" id="project-template">
-    <div class="row">
-      <div class="twelve columns"><h2>
+  <script id="project-template" type="text/x-handlebars-template">
+      <div class="one-third column"><h2>
         <li class="projects">
-          <h2>{{title}}</h2>
-          <img class="someClass" src="{{imgURL}}">
-          <h2>{{category}}</h2>
-          <h3>{{completedOn}}<h3>
+          <h2>{{name}}</h2>
+          <a href="{{link}}"><img src="{{image}}"></a>
+          <p>{{description}}</p>
           </li>
         </div>
-      </div>
     </script>
 
     <!-- Nav
@@ -111,11 +109,10 @@
 
 
       <footer>
-
-        &copy; 2017 Aaron McPeek
-
+        <p>&copy; 2017 Aaron McPeek</p>
       </footer>
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="JS/app.js"></script>
       <script src="JS/rawdata.js"></script>

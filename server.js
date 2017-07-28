@@ -4,7 +4,7 @@ const pg = ('pg)');
 const fs = require('fs');
 const express = require('express');
 const bodyParser = require('body-parser');
-const requestProxy = require('express-request-proxy');
+// const requestProxy = require('express-request-proxy');
 
 const PORT = process.env.PORT || 3000;
 const app = express();

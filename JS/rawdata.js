@@ -2,24 +2,18 @@
 
 var rawData = [
   {
-    title: 'Bus Mall',
+    name: 'Bus Mall',
+    link: 'https://arn1313.github.io/bus-mall/index.html',
     image: 'imgs/Bus-Mall.png',
-    projUrl: 'https://arn1313.github.io/bus-mall/index.html',
-    completedOn: '2017-06-25',
-    category: 'ProductReview'
   },
   {
-    title: 'Salmon Cookie',
+    name: 'Salmon Cookie',
+    link: 'https://arn1313.github.io/cookie-stand/index.html',
     image: 'imgs/Salmon Cookies.png',
-    projUrl: 'https://arn1313.github.io/cookie-stand/index.html',
-    completedOn: '2017-06-19',
-    category: 'Store-Data'
   },
   {
-    title: 'Verve.',
+    name: 'Verve.',
+    link: 'https://github.com/GavinThomas1192/201-Final-Project',
     image: 'imgs/Verve.png',
-    projUrl: 'https://github.com/GavinThomas1192/201-Final-Project',
-    completedOn: '2017-06-30',
-    category: 'Journal',
   }
 ]
